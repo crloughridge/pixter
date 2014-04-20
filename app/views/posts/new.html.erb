@@ -4,15 +4,19 @@
 <%= simple_form_for @post do |f| %>
   <div class="private-square span4 offset2 text-center">
   <h1>Upload your image</h1>
-    <%= f.input :title, label: 'Your username please', placeholder: 'what is the title of your picture?'%>
+    <%= f.input :title, label: 'Title', placeholder: 'what is the title of your picture?'%>
     </div>
 <div class="clr">
 </div>
 <br />
   <div class="private-square span4 offset2 text-center">
-  <%= f.input :description, placeholder: 'user@domain.com'%>
-  
-
+  <%= f.input :description, placeholder: 'What is happening in your picture?'%>
+    </div>
+<div class="clr">
+</div>
+<br />
+  <div class="private-square span4 offset2 text-center">
+    <%= f.input :image %>
 
     <%= f.button :submit, :class => 'btn btn-warning' %>
 </div>
